@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Faib</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <div class="logo">FARRAS IBRAHIM</div>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certificate">Certificate</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Farras Ibrahim</span></h1>
+            <p class="tagline">Web Developer & Designer</p>
+            <div class="cta-buttons">
+                <a href="#certificate" class="btn primary">View My Certificate</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+               <p> saya <strong>Farras Ibrahim</strong>, saya Berprofesional dengan keahlian dalam Teknik Mesin, Pemrograman, dan
+                    Editing. Berpengalaman dalam mekanik, pembuatan website menggunakan Html dan Css, serta editing
+                    video dan foto dengan Adobe Premiere Pro dan Photoshop. Terbiasa bekerja mandiri maupun dalam tim,
+                    serta fokus pada solusi kreatif dan efisien.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skill-">
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>Frontend Development</h3>
+                <p>HTML5, CSS3, JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-palette"></i>
+                <h3>Web Design</h3>
+                <p>UI/UX, Responsive Design</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-tools"></i>
+                <h3>Development Tools</h3>
+                <p>Git, VS Code, Figma</p>
+            </div>
+            </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="certificate" class="certificate">
+        <h2 class="section-title">Certificate</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="Faib1.png" alt="projects 1">
+                <div class="project-info">
+                    <h2>Kegiatan Festival Pemuda</h2>
+                    <a href="#" class="btn">View</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="Faib2.jpg" alt="Project 2">
+                <div class="project-info">
+                    <h2>Tournament Mobile Legend</h2>
+                    <a href="#" class="btn">View</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                <div class="project-info">
+                    <h2>Dibimbing</h2>
+                    <a href="#" class="btn">View</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>faibibra385@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+62 8586 0198 685</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Bekasi, Indonesia</p>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/FAIB-Creat/FAIB-Creat.git"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/farras-ibrahim-23426a33a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/madebyfaib/profilecard/?igsh=MTVpc3dybmlxNzM5Zw=="><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
